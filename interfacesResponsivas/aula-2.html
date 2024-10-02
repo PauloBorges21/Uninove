@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Link para o arquivo Bootstrap css minificado. 
+    A partir deste link que se inicia o uso dos recursos do framework Bootstrap. -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet"> 
+    <title>Modelagem de Interfaces - Bootstrap</title>
+ 
+    <style type="text/css">
+      
+      /* estilização para smartphones */  
+         body {
+              background-color: black;
+              color: white;
+          }
+    
+      /* breakpoint - estilização para tablets */
+      @media only screen and (min-width: 768px) {
+          body {
+              background-color: grey;
+          }
+      }
+      /* breakpoint - estilização para laptops e desktops */
+      @media only screen and (min-width: 1200px) {
+          body {
+              background-color: white;
+              color: black;
+          }
+      }   
+      </style>
+ 
+  </head>
+  <body>
+    <h1 style="text-align: center;">Containers</h1>
+    
+    <br><br>
+     <!-- Exemplo -->
+     <h1 style="font-size:10vw">Texto Responsivo</h1>
+     <br><br>
+    <div class="container" style="background-color: lightblue">
+      <h2 style="text-align: center;">Classe .container</h2> 
+    </div>
+ 
+    <br><br><br>
+ 
+    <div class="container-fluid" style="background-color: lightgreen">
+      <h2 style="text-align: center;">Classe .container-fluid</h2> 
+    </div>
+    <!-- Exemplo -->
+    <img src="assets/image/3.webp" style="width:100%">
+    <!-- Exemplo Propriedades max-width -->
+    <img src="assets/image/3.webp" style="max-width:100%;height:auto;">
+
+    <div class="container"></div>
+      <h1>Picture e Media Queries</h1> <br><br>
+ 
+      <picture>
+        <source srcset="assets/image/DALL·E767.webp" media="(max-width: 767px)">
+        <source srcset="assets/image/DALL·E1199.webp" media="(max-width: 1199px)">
+        <source srcset="assets/image/DALL·E.webp">
+        <img src="assets/image/DALL·E.webp" alt="Exemplo_Imagem">
+      </picture>
+ 
+    </div>
+
+    <div class="container"></div>
+      <h1 style="text-align: center;">Media Queries</h1> <br><br>
+ 
+      <p>Media Queries <br>
+      Lorem ipsum pulvinar ornare ac venenatis elementum, egestas potenti 
+      curabitur praesent erat, sollicitudin quisque mollis egestas est. potenti 
+      porta cubilia ipsum adipiscing curae nec quis sem imperdiet leo dictumst 
+      litora mollis amet, feugiat vel maecenas aliquam mattis suspendisse quis 
+      volutpat duis augue quam vel. amet massa dictumst interdum vulputate lorem 
+      vehicula luctus potenti augue congue, class nisi enim donec luctus netus 
+      mollis nisi sodales iaculis nostra, aenean consequat elit pellentesque ipsum 
+      sollicitudin himenaeos imperdiet eleifend. felis amet nostra nullam integer 
+      nostra nam accumsan iaculis lacinia posuere ut, curabitur feugiat sodales 
+      lorem donec sit senectus elit porta. </p> 
+    </div>
+
+
+    <script src="js/jquery.js"></script>		  
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
